@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(#fffcfc);
+  background-attachment: fixed;
+  color: #000000;
+  animation: fadeInBody 1s ease;
+}
+@keyframes fadeInBody { from {opacity: 0;} to {opacity: 1;} }
+
+.navbar { background: linear-gradient(#011C40) !important; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+.navbar-brand { font-weight: 600; letter-spacing: 1px; color: white !important; }
+.nav-link { color: white !important; font-weight: 500; transition: 0.3s ease; }
+.nav-link:hover { opacity: 0.8; transform: translateY(-2px); }
+
+section .container {
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.40);
+  animation: fadeUp 0.6s ease;
+}
+@keyframes fadeUp { from {opacity:0; transform: translateY(20px);} to {opacity:1; transform: translateY(0);} }
+
+h1, h2 { font-weight: 600; letter-spacing: 1px; color: #000000; }
+
+.btn { border-radius: 30px; padding: 8px 20px; font-weight: 500; transition: 0.3s ease; border: none; }
+.btn-primary { background: linear-gradient(45deg, #011C40); }
+.btn-success { background: linear-gradient(45deg, #011C40); }
+.btn-secondary { background: #e9e9e9; color: #333; }
+.btn-danger { background: linear-gradient(45deg, #f56f6f, #f56f6f); }
+.btn-warning { background: linear-gradient(45deg, #ffd43b, #ffa94d); }
+.btn:hover { transform: scale(1.07); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+
+table { border-radius: 15px; overflow: hidden; background: rgb(255,255,255); }
+thead { background: linear-gradient(45deg, #011C40, #ffff); color: rgb(0,0,0); font-weight: 500; }
+tbody tr { transition: 0.2s ease; }
+tbody tr:hover { background: #fffefe; transform: scale(1.01); }
+
+.form-control, .form-select { border-radius: 15px; border: 1px solid #ddd; padding: 10px 15px; transition: 0.3s ease; }
+.form-control:focus, .form-select:focus { border-color: #000000; box-shadow: 0 0 10px rgba(0,0,0,0.40); }
+
+.card { border: none; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.08); background: rgba(255,255,255,0.85); backdrop-filter: blur(8px); }
+
+#profile p { font-size: 16px; padding: 5px 0; }
+#profile strong { color: #92c2ec; }
+
+.badge { padding: 6px 10px; border-radius: 20px; font-weight: 500; }
+
+.modal-content { border-radius: 20px; border: none; box-shadow: 0 20px 50px rgba(0,0,0,0.15); }
+
+.dropdown-menu { border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: none; }
+.dropdown-item:hover { background: linear-gradient(45deg, #011C40, #ffff); color: white; }
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-thumb { background: linear-gradient(#011C40, #ffff); border-radius: 10px; }
+
+.password-wrapper { position: relative; }
+.password-wrapper input { padding-right: 45px; }
+.toggle-password { position: absolute; right: 15px; top: 50%; transform: translateY(-50%); cursor: pointer; font-size: 18px; user-select: none; transition: 0.3s ease; }
+.toggle-password:hover { transform: translateY(-50%) scale(1.2); }
